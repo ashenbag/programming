@@ -1,0 +1,15 @@
+ns compare.tcl -scen scen1_10n -tfc cbrgen_cbr_10n -tr dsr10.tr -rpr 1 -nn 10
+ns compare.tcl -scen scen1_30n -tfc cbrgen_cbr_30n -tr dsr30.tr -rpr 1 -nn 30
+ns compare.tcl -scen scen1_50n -tfc cbrgen_cbr_50n -tr dsr50.tr -rpr 1 -nn 50
+
+ns compare.tcl -scen scen1_10n -tfc cbrgen_cbr_10n -tr aodv10.tr -rpr 2 -nn 10
+ns compare.tcl -scen scen1_30n -tfc cbrgen_cbr_30n -tr aodv30.tr -rpr 2 -nn 30
+ns compare.tcl -scen scen1_50n -tfc cbrgen_cbr_50n -tr aodv50.tr -rpr 2 -nn 50
+
+perl performance.pl dsr10.tr 1
+perl performance.pl dsr30.tr 1
+perl performance.pl dsr50.tr 1
+
+perl performance.pl aodv10.tr 2
+perl performance.pl aodv30.tr 2
+perl performance.pl aodv50.tr 2

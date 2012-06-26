@@ -1,0 +1,55 @@
+This directory contains several files that may be used for
+programming assignment 2.  The following is a list.
+
+cksum.c:	This file implements functions to compute
+                checksums.
+cksum.h:	Defines the interface for this tool.
+		See the file "cksum.h" for detailed documentation.
+
+eventTimer.c:  	This file implements a tool that can be used
+               	to set events to be triggered in future.
+               	Each event is specified by a handler function.
+eventTimer.h:  	Defines the interface for this tool.
+		See the file "eventTimer.h" for detailed documentation.
+
+evil.c:        	This tool implements an unreliable channel at 
+               	user level. This tool can be used by diverting
+               	calls from sendto function to evilsendto.
+               	It performs several operations including 
+               	corruption, dropping, duplication and delaying.
+               	This tool in turn uses the evil timer.	
+evil.h:        	Defines the interface for this tool.
+evil.config:	Defines the parameters used by evil.c
+		See the file "evil.h" for detailed documentation.
+ 
+utcp.h:		This file lists the interface that needs to be
+		provided to the applications.
+		In particular, the 8 functions defined in this 
+		file must be implemented.
+		Also must be adequately defined a macro
+		specifying MAX_DATA_LEN.
+		See the file "utcp.h" for detailed documentation.
+
+utcp.c:		This file gives a dummy implementation of the 
+		above interface. This file also has adequate 
+		pointers on how to proceed with the implementation.
+		
+SampleServer.c:	This file implements the server part of an 
+		example application.  This server just echoes 
+		back the data it receives.
+SampleClient.c:	This file implements the client part of an 
+		example application. This client takes input form 
+		the console, sends it to the server and outputs the
+		response.
+		This test application can currently be run using the
+		dummy implemenation of utcp.
+		However, it will not work if there is unreliability
+		in the channel.
+
+WARNING:	Do not use SIGALRM in your utcp implementation.
+		Instead use the functions from evilTimer.h
+
+Use the following commands to compile the sample app:
+
+gcc -g -Wall -lpthread eventTimer.c evil.c cksum.c utcp.c sampleServer.c -o sampleServer
+gcc -g -Wall -lpthread eventTimer.c evil.c cksum.c utcp.c sampleClient.c -o sampleClient

@@ -1,0 +1,569 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 9">
+<meta name="Originator" content="Microsoft Word 9">
+<link rel="File-List" href="http://www.cs.cornell.edu/courses/cs519/2002sp/pa2_files/filelist.xml">
+<title>CS519 Computer Networks </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ramasv</o:Author>
+  <o:LastAuthor>ramasv</o:LastAuthor>
+  <o:Revision>18</o:Revision>
+  <o:TotalTime>174</o:TotalTime>
+  <o:Created>2002-03-15T23:05:00Z</o:Created>
+  <o:LastSaved>2002-04-11T20:39:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1464</o:Words>
+  <o:Characters>8349</o:Characters>
+  <o:Company>Cornell University Computer Science</o:Company>
+  <o:Lines>69</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>10253</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:ArulMathiTSC;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:ArulMathiTSC;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:38941053;
+	mso-list-type:hybrid;
+	mso-list-template-ids:351940236 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1
+	{mso-list-id:221866103;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-579040220 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:548880285;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-560853008 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body style="" lang="EN-US" link="blue" vlink="purple">
+
+<div class="Section1">
+
+<h3 style="text-align:center" align="center">CS519 Computer Networks <span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Programming Assignment 2</h3>
+
+<h3 style="text-align:center;text-indent:.5in" align="center">Due: <span style="mso-tab-count:1"> </span><span style="color:blue">Sunday, 04/14/02 11:59 p.m.</span></h3>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">In
+this programming assignment you would build a connection-oriented reliable
+transport protocol (UTCP, User-level TCP) on top of the standard Universal
+Datagram Protocol (UDP).<span style="mso-spacerun: yes">&nbsp; </span>This
+assignment would also be done in groups of exactly <b>2</b> people. You are
+however free to change your partners from the previous assignment.<span style="mso-spacerun: yes">&nbsp; </span>This programming assignment would be done in
+<b>C</b> language on <b>Unix</b> Operating System using the socket API.<span style="mso-spacerun: yes">&nbsp; </span>This we believe would give a real flavor of
+network programming.<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<h3 style="text-align:center" align="center">Specification</h3>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+basic requirements that need to be satisfied by UTCP are the following.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">1. <b>Connection
+Orientation</b>: Applications using the UTCP should be able open persistent
+connections between two entities specified by port number and IP address. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">2. <b>Reliable Message
+Delivery</b>:<span style="mso-spacerun: yes">&nbsp; </span>Messages sent by the
+application must be delivered at the other end.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">3. <b>In-Order
+Delivery</b>: Messages sent must be delivered in the same order at the
+destination.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">4. <b>Duplicate
+Suppression</b>: No message may be delivered more than once to the destination.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;"><span style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="text-indent:.25in"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">5. <b>Flow Control</b>:
+The message stream from the sender to the receiver should be controlled so that
+the receiver is not bombarded by messages.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Basically,
+this assignment involves building a reliable connection on top of an unreliable
+datagram protocol (UDP </span><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Wingdings;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-char-type:symbol;mso-symbol-font-family:
+Wingdings"><span style="mso-char-type:symbol;mso-symbol-font-family:Wingdings">J</span></span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">).
+The underlying channel can corrupt packets, drop packets, arbitrarily delay
+some packets and might produce duplicate copies of the same packet.<span style="mso-spacerun: yes">&nbsp; </span>The protocol you design must be robust
+enough to handle each of these problems. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoBodyText"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Satisfying
+these requirements would involve implementation of a sliding-window
+protocol.<span style="mso-spacerun: yes">&nbsp; </span>You are free to design any
+suitable protocol to guarantee these requirements.<span style="mso-spacerun:
+yes">&nbsp; </span>However, we expect that your protocol would involve pipelining to
+improve throughput.<span style="mso-spacerun: yes">&nbsp; </span>You would be using
+unreliable datagram sockets as the underlying layer.<span style="mso-spacerun:
+yes">&nbsp; </span>For an introduction to socket programming see Unix Network
+Programming by Richard Stevens.<span style="mso-spacerun: yes">&nbsp; </span>In
+addition, you would also need other mechanisms such as asynchronous I/O.</p>
+
+<p class="MsoBodyText"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Please
+note that we would continuously add to this page any updates so as to clarify
+the requirements of this assignment. However, the specifications would not be
+altered so you can start working on this assignment at the earliest.</p>
+
+<h3 style="text-align:center" align="center">Interface</h3>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">In
+order make it easier for the graders; we expect that you export a specific
+interface to the application.<span style="mso-spacerun: yes">&nbsp; </span>This
+interface is completely defined in the file “utcp.h”.<span style="mso-spacerun:
+yes">&nbsp; </span>The required interface includes 8 functions and 1 macro
+definition.<span style="mso-spacerun: yes">&nbsp; </span>Robustness of the
+implementation is very important. Appropriate intimation of errors and recovery
+from errors, graceful termination of the program, etc. are important and would
+also carry points.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<h3 style="text-align:center" align="center">Utilities Provided</h3>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">For
+the sake of making your work easier and the grader’s work lighter, we are
+providing you with a set of utility files.<span style="mso-spacerun: yes">&nbsp;
+</span>The following is a synopsis of these tools. For a detailed view, see the
+documentation associated with these tools.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;">Sample Application</span></b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">:
+The files “sampleServer.c” and “sampleClient.c” give example client-server
+programs that use the interface specified in “utcp.h”.<span style="mso-spacerun: yes">&nbsp; </span>This sample application is a simple client
+server program where the client sends keyboard inputs to the server and prints
+out the server response and the server merely echoes back the messages sent by
+the client.<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;">Event Timer</span></b><span style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">:<span style="mso-spacerun: yes">&nbsp; </span>This is a tool that helps you set timed
+events.<span style="mso-spacerun: yes">&nbsp; </span>That is, you can define events
+to be called in the future (example timeout).<span style="mso-spacerun: yes">&nbsp;
+</span>The events are defined as a function that would be called at the time
+specified by a delay factor.<span style="mso-spacerun: yes">&nbsp; </span>You can
+also specify argument to be called to that function at the time of
+invocation.<span style="mso-spacerun: yes">&nbsp; </span>We strongly recommend and
+require that you use this tool for setting retransmission timers.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;">Evil Channel</span></b><span style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">: This is a
+tool that is built to mimic an unreliable channel at the user level. This tool
+corrupts packets, drops packets, introduces arbitrary delay for certain packets
+and creates duplicate copies of packets.<span style="mso-spacerun: yes">&nbsp;
+</span>The evil channel can be invoked by replacing the socket <i>sendto </i>with
+the <i>evilsendto</i> function defined by this tool.<span style="mso-spacerun:
+yes">&nbsp; </span>This makes it very flexible as you can work with UDP sockets and
+finally use this tool for testing. The file “evil.config” specifies the
+parameters for the evil channel.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;">Check Sum</span></b><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">: A simple function to
+compute checksum on a packet is also included.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;">utcp.c</span></b><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">: This file provides a
+dummy implementation of the interface specified above using datagram sockets.
+The sample application can be successfully tested using this dummy implementation
+as long as the channel is not evil.<span style="mso-spacerun: yes">&nbsp;
+</span>Directly modifying this program would be a good starting point.<span style="mso-spacerun: yes">&nbsp; </span>The utcp.h file has a sample packet
+definition that goes with this dummy implementation. You are free to redefine
+appropriately.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Also
+for your convenience, we have included a “headers.h” that includes most
+commonly used header files for network programming. </span></p>
+
+<h3 style="text-align:center" align="center">Testing</h3>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+utility imitating an evil channel should be very useful to test the robustness
+of your protocol.<span style="mso-spacerun: yes">&nbsp; </span>You can use this tool
+to introduce selected errors in the channel by varying the parameters in
+“evil.config”.<span style="mso-spacerun: yes">&nbsp; </span>The graders would also
+be using the same tool at the time of testing.<span style="mso-spacerun: yes">&nbsp;
+</span>So please do not alter the implementation of evil channel.<span style="mso-spacerun: yes">&nbsp; </span>In addition, the graders would also build a
+test application to test the integrity of the program. This test application
+would also use the same interface specified before. <o:p></o:p></span></p>
+
+<h3 style="text-align:center" align="center">Extra Credit</h3>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>In
+addition to the specified requirements you can attempt to provide the following
+additional functionalities for extra credit.<span style="mso-spacerun: yes">&nbsp;
+</span>However, the extra credit will be considered only if your assignment
+already satisfies the basic requirements.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<ol style="margin-top:0in" start="1" type="1">
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo3;tab-stops:list .5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">Adaptive
+     Retransmission Timer.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo3;tab-stops:list .5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">Multiple
+     concurrent connections.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo3;tab-stops:list .5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">Piggy-backing
+     acknowledgements.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-list:l2 level1 lfo3;tab-stops:list .5in"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">Any
+     other interesting and useful feature.<o:p></o:p></span></li>
+</ol>
+
+<h3 style="text-align:center" align="center">Submission</h3>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Compliance
+to the interface is <b>obligatory</b>! Before submission make sure that the
+sample client-server can successfully execute with no changes, at least when
+there are no packet loss in the channel.<span style="mso-spacerun: yes">&nbsp;
+</span>Any additional interface exported would be ignored.<span style="mso-spacerun: yes">&nbsp; </span>You would be expected to submit the
+following files before the due date.</p>
+
+<p class="MsoBodyText"><span style="mso-spacerun: yes">&nbsp;</span></p>
+
+<p class="MsoBodyText" style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo5;
+tab-stops:list .5in"><!--[if !supportLists]-->1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>Program Files</b>: These files (.h, .c) would contain the
+code for the various functions defined in the interface in addition to the
+helper files provided. </p>
+
+<p class="MsoBodyText" style="margin-left:.25in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText" style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo5;
+tab-stops:list .5in"><!--[if !supportLists]-->2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>README.txt</b>:<span style="mso-spacerun: yes">&nbsp;
+</span>This file would specify the names and netids of the partners and give
+brief compile and execute instructions and a brief list of unfixed bugs.<span style="mso-spacerun: yes">&nbsp; </span>Also list all the features that deserve
+extra credit.<span style="mso-spacerun: yes">&nbsp; </span>The graders would not
+notice this (of course they would notice the bugs <span style="font-family:
+Wingdings;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-char-type:symbol;mso-symbol-font-family:Wingdings"><span style="mso-char-type:
+symbol;mso-symbol-font-family:Wingdings">J</span></span>) unless you specify
+them here.</p>
+
+<p class="MsoBodyText"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText" style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo5;
+tab-stops:list .5in"><!--[if !supportLists]-->3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--><b>DESIGN.txt</b>:<span style="mso-spacerun: yes">&nbsp; </span>In
+this file please explain concisely the approach of your design to satisfy each
+of the requirements.<span style="mso-spacerun: yes">&nbsp; </span>If you are using
+well-described methods, then please provide only the name and a reference in
+the textbook.</p>
+
+<p class="MsoBodyText" style="margin-left:.25in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<h3 style="text-align:center" align="center">Grading</h3>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;">As
+specified in the section on testing, we would write a short application, in
+addition to the sample application, based on the interface defined in “utcp.h”
+to grade your programs.<span style="mso-spacerun: yes">&nbsp; </span>The evilSend
+tool would be used to simulate an unreliable channel.<span style="mso-spacerun:
+yes">&nbsp; </span>The graders prefer to grade the programs by using test
+applications rather than looking at the code.<span style="mso-spacerun: yes">&nbsp;
+</span>Hence, a correctly functioning stop-wait protocol may be awarded more
+points than a broken go-back-n protocol.<span style="mso-spacerun: yes">&nbsp;
+</span>Therefore please make sure that the required features are correctly
+implemented before attempting implementation of new features.<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>Also, points would be awarded for
+robustness of the implementation.<span style="mso-spacerun: yes">&nbsp;
+</span>Please take care to handle exceptions and terminations gracefully.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<h3 style="text-align:center" align="center">Bug Report</h3>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+programs supplemented with this assignment have been extensively tested. Yet,
+there could be undiscovered bugs in the program.<span style="mso-spacerun:
+yes">&nbsp; </span>So please report any bugs promptly to the <a href="mailto:cs519@cs.cornell.edu">course staff</a>.<span style="mso-spacerun:
+yes">&nbsp; </span>The following updates have been made to the helpfiles.</p>
+
+<p class="MsoBodyText"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><b>03/28/02 2:40 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“utcp.c”: The return type of function utcpAccept is
+changed to connIdType (earlier it was bindIdType). The definition in “utcp.h”
+is correct.</p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“sampleServer.c”:<span style="mso-spacerun: yes">&nbsp;
+</span>The calls to utcpClose(bindId) have been deleted in all its occurrences.</p>
+
+<p class="MsoBodyText"><b><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></b></p>
+
+<p class="MsoBodyText"><b>04/04/02 8:20 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: The problem with eventTimerQuit
+function has been fixed.</p>
+
+<p class="MsoBodyText" style="margin-left:.5in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><b>04/04/02 11:40 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: A minor bug when NULL args is passed to
+setEvent has been fixed.</p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“cksum.c”: This function was has been modified slightly
+to reflect standard variable names.<span style="mso-spacerun: yes">&nbsp; </span>The
+core functionality and interface remains the same.</p>
+
+<p class="MsoBodyText"><b><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></b></p>
+
+<p class="MsoBodyText"><b>04/05/02 12:40 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“evil.c”: In the function evilSend, sigblock(SIGALRM)
+changed to sigblock(sigmask(SIGALRM)).</p>
+
+<p class="MsoBodyText" style="margin-left:.5in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><b>04/10/02 2:20 a.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: In the function handleSigAlrm, macro
+call to TIMECMP is changed.</p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: In the function handleSigAlrm,
+definition of ‘handler’ variable is changed. </p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“cksum.c”: In the function in_cksum, definition and use
+of ‘ptr’ variable corrected.</p>
+
+<p class="MsoBodyText" style="margin-left:.5in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><b>04/10/02 5:00 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: In the function handleSigAlrm, assert
+(eventQ.next != null) is changed to return without doing anything.</p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“eventTimer.c”: The above update also applies to
+thread-safe eventTimer.c. </p>
+
+<p class="MsoBodyText" style="margin-left:.5in"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoBodyText"><b>04/11/02 4:40 p.m.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“evil.c”: In the function evilsendto, msg[randomByte] =
+~msg[randomByte] is added after sending corrupted packet.</p>
+
+<p class="MsoBodyText" style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo7;
+tab-stops:list .75in"><!--[if !supportLists]--><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]-->“evil.c”: The above update also applies to thread-safe
+evil.c. </p>
+
+<h3 style="text-align:center" align="center">Other Resources</h3>
+
+<p class="MsoBodyText"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+following links provide some information about the socket programming interface
+and other useful functions.</p>
+
+<p class="MsoBodyText"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;"><a href="ftp://gaia.cs.umass.edu/cs653_1996/sock.ps">ftp://gaia.cs.umass.edu/cs653_1996/sock.ps</a><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><a href="http://www.ecst.csuchico.edu/%7Echafey/prog/sockets/">http://www.ecst.csuchico.edu/~chafey/prog/sockets/</a><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><a href="http://www.mcsr.olemiss.edu/unixhelp/"><span style="font-family:ArulMathiTSC;
+mso-bidi-font-family:&quot;Times New Roman&quot;">http://www.mcsr.olemiss.edu/unixhelp/</span></a><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><a href="http://www.kohala.com/start/unpv12e.html">http://www.kohala.com/start/unpv12e.html</a>
+(contains source code for sample programs in Steven’s)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>However,
+the best help would be to look up the man pages of specific functions. An
+Internet search on any function would provide its manual page.<o:p></o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>
