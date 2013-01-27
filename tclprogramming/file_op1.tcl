@@ -57,15 +57,31 @@ proc file_data_to_array {} {
 }
 
 proc get_per_row_count {row} {
+	global data_array
 	set total 0
-	for {set i 1} {i <= 7} {i++} {
-		set total [expr $total + [array get 
+	foreach element [array names data_array "*\.$row"] {
+		set total [expr $total + $data_array($element)]
 	}
+	return $total
 }
-
-proc get_per_col_count {col} {
+proc get_per_col_count {col_name} {
+	global data_array
+	set total 0
+	set col [day_to_number $col_name]
+	foreach element [array names data_array "$col\.*"] {
+		set total [expr $total + $data_array($element)]
+	}
+	return $total
 }
 
 file_data_to_array
-puts "URL2: [get_per_row_count URL2]"
+puts "Sunday: [get_per_col_count Sunday]"
+puts "Monday: [get_per_col_count Monday]"
+puts "Tuesday: [get_per_col_count Tuesday]"
 puts "Wednesday: [get_per_col_count Wednesday]"
+puts "Thursday: [get_per_col_count Thursday]"
+puts "Friday: [get_per_col_count Friday]"
+puts "Saturday: [get_per_col_count Saturday]"
+puts "URL1: [get_per_row_count URL1]"
+puts "URL2: [get_per_row_count URL2]"
+puts "URL3: [get_per_row_count URL3]"
