@@ -1,5 +1,6 @@
 #!/bin/tclsh
 
+set days_of_week [list "Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday"]
 proc day_to_number {day} {
 	switch $day {
 		"Sunday" {
@@ -27,7 +28,7 @@ proc day_to_number {day} {
 }
 
 proc number_to_day {number} {
-	set days_of_week [list "Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday"]
+	global days_of_week
 	return [lindex $days_of_week $number]
 }
 
@@ -75,13 +76,10 @@ proc get_per_col_count {col_name} {
 }
 
 file_data_to_array
-puts "Sunday: [get_per_col_count Sunday]"
-puts "Monday: [get_per_col_count Monday]"
-puts "Tuesday: [get_per_col_count Tuesday]"
-puts "Wednesday: [get_per_col_count Wednesday]"
-puts "Thursday: [get_per_col_count Thursday]"
-puts "Friday: [get_per_col_count Friday]"
-puts "Saturday: [get_per_col_count Saturday]"
-puts "URL1: [get_per_row_count URL1]"
-puts "URL2: [get_per_row_count URL2]"
-puts "URL3: [get_per_row_count URL3]"
+foreach col $days_of_week {
+	puts [format "%-15s %d" "$col:" [get_per_col_count $col]]
+}
+puts "******"
+foreach row $row_index_list {
+	puts [format "%-15s %d" "$row:" [get_per_row_count $row]]
+}
