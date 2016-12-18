@@ -1,4 +1,5 @@
 import time
+import random
 def b_search(input_list,num):
     low=0
     high=len(input_list)-1
@@ -46,8 +47,19 @@ def sum_check3(num,e_sum):
             j-=1
     return 0
 
+def sum_check4(num,e_sum):
+    input_list = [int(random.random() * 1000) for n in range(0,num)]
+    e_sum = input_list[num-2] + input_list[num-1]
+    comp_dict = {}
+    for num in input_list:
+        if num in comp_dict:
+            return 1
+        else:
+            comp_dict[e_sum-num] = num
+
+
 start_time = time.time()
-if sum_check3(5000,9000):
+if sum_check3(10000,9000):
     print "match"
 else:
     print "no match"
